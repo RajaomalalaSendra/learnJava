@@ -1,17 +1,11 @@
 package com.two;
 
-import com.four.HelloManovosoa;
-import com.one.HelloAndriantsihoarana;
-import com.three.HelloManovo;
+import com.five.Name;
 
 public class HelloEverybody{
 	public static void main(String[] args) {
-		HelloManovo helloNovo = new HelloManovo();
-		HelloAndriantsihoarana helloTsihoarana = new HelloAndriantsihoarana();
-		HelloManovosoa helloSoa = new HelloManovosoa();
-
-		System.out.println(helloSoa());
-		System.out.println(helloNovo());
-		System.out.println(helloTsihoarana());
+		Name myName = new Name("Sendra", "Malala");
+		System.out.println(myName.getName());
+		System.out.println(myName.getLastName());
 	}
 }
