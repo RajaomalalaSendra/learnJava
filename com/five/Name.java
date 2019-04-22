@@ -10,8 +10,18 @@ public class Name {
      public String getLastName(){
      	return this.lastName;
      }
-     public Name(String name, String lastName){
-     	this.name = name;
-     	this.lastName = lastName;
+     public void setName(String name){
+        if (name!=null && name.length() > 2) {
+        	this.name = name;
+        } else {
+        	this.name = "anonymous";
+        }
+     }
+     public void setLastName(String lastName){
+     	if (lastName!=null && lastName.length() > 2) {
+     		this.lastName = lastName;
+     	}else {
+     		this.lastName = "anonymous";
+     	}
      }
 }
