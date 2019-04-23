@@ -40,7 +40,7 @@ public class Theirs {
     	if (adress!=null && adress.length > 3) {
     		this.adress = adress;
     	}else {
-    		this.adress = "unknown adress";
+    		this.adress = "unknownAdress";
     	}
     }
     public void String setEmail(String email){
@@ -54,7 +54,7 @@ public class Theirs {
     	if (tel!=null && tel.length() < 20) {
     		this.contact[1] = tel;
     	}else {
-    		this.contact[1] = "+26133--------";
+    		this.contact[1] = "+26123--------";
     	}
     }
 }
