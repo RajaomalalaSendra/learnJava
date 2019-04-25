@@ -6,11 +6,13 @@ public class Common {
     private int age;
     private  String address;
     private String contact;
-    public Common(String name, String lastName, int age, String address, String contact) {
+    private String email;
+    public Common(String name, String lastName, int age, String address,String email, String contact) {
     	this.name = name;
     	this.lastName = lastName;
     	this.age = age;
         this.address = address;
+        this.email = email;
         this.contact = contact;
     }
     public String getName(){
@@ -27,5 +29,8 @@ public class Common {
     }
     public String getContact(){
         return this.contact;
+    }
+    public  String getEmail(){
+        return this.email;
     }
 }
