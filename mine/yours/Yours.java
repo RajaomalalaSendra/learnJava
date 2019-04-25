@@ -8,13 +8,12 @@ public class Yours {
     // creation of the variabbles of all of theses
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-	    Theirs theirs = new Theirs;
+	    Theirs theirs = new Theirs();
 	    // Enter the formulaire
 	    System.out.println("==========================");
 	    System.out.println("THe formulaire");
 	    System.out.println("==========================");
 
-	    while(True){
 	    // about the user
 	    System.out.print("Name: ");
 	    String name = scan.nextLine();
@@ -53,19 +52,17 @@ public class Yours {
         // creation of the His 
         His his = new His(position, salary, theirs);
         	if(theirs.getName()!="anonymous" && theirs.getLastName()!="anonymous" && theirs.getAdress()!="unknownAdress"
-        	&& theirs.getEmail()!="default@email.com" && theirs.getTel()!="+26123--------"){
+        	&& theirs.getMail()!="default@email.com" && theirs.getTel()!="+26123--------"){
                  System.out.println("Account has been created!!!");
                  System.out.println("About your account.");
                  System.out.println("============================");
                  System.out.println("Name: " + his.theirs.getName());
-                 System.out.println("Email: " + his.theirs.getEmail());
+                 System.out.println("Email: " + his.theirs.getMail());
                  System.out.println("Position: " + his.getPosition());
                  System.out.println("Salary: " + his.getSalary());
                  System.out.println("============================");
-                 break;
         	}else{
         		System.out.print("We are very sorry for that because.\nYou need to reenter the information about you!!!");
         	}
-        }
     }
 }

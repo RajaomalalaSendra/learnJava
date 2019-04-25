@@ -13,10 +13,10 @@ public class His {
     	this.theirs = theirs;
     }
     // get the position and position
-    String getPosition() {
+    public String getPosition() {
     	return this.position;
     }
-    int getSalary() {
-    	return this.position;
+    public int getSalary() {
+    	return this.salary;
     }
 }
