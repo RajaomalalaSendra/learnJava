@@ -13,7 +13,9 @@ public class Toest{
 			// create the statement of the object
 			Statement state = con.createStatement();
 			// execute the Query
-			ResultSet result = state.executeQuery("select * from teacher where id = 2");
+			String sql = "INSERT INTO teacher " + "VALUES(8, 'Teacher Histo-Geographie', 'PHD in Histo-Geographie', 'Dr. Ranjazafinirina', 'Mahefanarivonantenaina')";
+			state.executeUpdate(sql);
+			ResultSet result = state.executeQuery("SELECT * FROM teacher WHERE id % 2 = 0");
 			
 			// process the result set
 			while(result.next()){  
