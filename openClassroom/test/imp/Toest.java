@@ -13,8 +13,10 @@ public class Toest{
 			// create the statement of the object
 			Statement state = con.createStatement();
 			// execute the Query
-			String sql = "INSERT INTO teacher " + "VALUES(8, 'Teacher Histo-Geographie', 'PHD in Histo-Geographie', 'Dr. Ranjazafinirina', 'Mahefanarivonantenaina')";
+			String sql = "INSERT INTO teacher " + "VALUES(11, 'Teacher Histo-Geographie', 'PHD in Histo-Geographie', 'Dr. Ranjazafinirina I', 'Mahefanarivonante')";
+			String sqlTwo = "INSERT INTO teacher " + "VALUES(10, 'Teacher Histo-Geographie', 'PHD in Histo-Geographie', 'Dr. Ranjazafinirina II', 'Mahefanarivo Nine')";
 			state.executeUpdate(sql);
+			state.executeUpdate(sqlTwo);
 			ResultSet result = state.executeQuery("SELECT * FROM teacher WHERE id % 2 = 0");
 			
 			// process the result set
