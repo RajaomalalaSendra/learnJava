@@ -11,6 +11,6 @@ public class Chat extends Felin {
 	}
 
 	public void crier() {
-	System.out.println("Je miaule sur les toits !");
+	   System.out.println("Je miaule sur les toits !");
 	}
 }
