@@ -39,5 +39,26 @@ public class Call{
 		CapitalTwo cap2 = new CapitalTwo();
 		System.out.println(cap2.getDescription());
 		System.out.println("=========------------===============");
+		// polymorphisme in java
+		//Définition d'un tableau de villes null
+		City[] tableau = new City[6];
+		String[] tab = {"Marseille", "Lille", "Caen", "Lyon", "Paris", "Nantes"};
+		String[] tab3 = {"120", "102", "121", "103", "101", "122"};
+		int[] tab2 = {1234560, 78456000, 6549870, 75832165, 15940000, 2130000};
+		//Les trois premiers éléments du tableau seront des villes,
+		//et le reste, des capitales
+		for(int i = 0; i < 6; i++){
+			if (i != 4) {
+				City C = new City(tab[i], "France", tab3[i], tab2[i]);
+				tableau[i] = C;
+		    } else {
+				CapitalTwo C = new CapitalTwo(tab[i], "France", tab3[i], tab2[i], "La tour Eiffel", "It is one of the bigest city in the world.", "It has been created by the people at 1400.");
+				tableau[i] = C;
+			}
+		}
+		//Il ne nous reste plus qu'à décrire tout notre tableau !
+		for(City C : tableau){
+			System.out.println(C.getDescription()+"\n");
+		}
 	}
 }
