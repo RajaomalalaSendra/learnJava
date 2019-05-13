@@ -51,7 +51,7 @@ public class City{
 	}
 	//Retourne la description de la ville
 	public String getDescription(){
-		return "\t"+this.cityName+" est une ville de "+this.countryName+ ", elle comporte : "+this.habitantsNumber+" habitant(s) => elle est donc de catégorie : "+this.category;
+		return "\t"+this.cityName+" est une ville de "+this.countryName+ "\n\tElle comporte : "+this.habitantsNumber+" habitant(s) \n\t=> Elle est donc de catégorie : "+this.category;
 	}
 	public String getComparison(City C1){
 			String str = new String();

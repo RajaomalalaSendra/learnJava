@@ -35,5 +35,9 @@ public class Call{
 		System.out.println("=========------------===============");
 		Capital cap = new Capital();
 		System.out.println("City: " + cap.getCityName());
+		System.out.println("=========------------===============");
+		CapitalTwo cap2 = new CapitalTwo();
+		System.out.println(cap2.getDescription());
+		System.out.println("=========------------===============");
 	}
 }
