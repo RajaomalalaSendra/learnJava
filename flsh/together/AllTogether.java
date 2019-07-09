@@ -12,7 +12,7 @@ public class AllTogether{
 		Common std = new Common("Manitra", "Nomena", 18, "Ankatso IIII", "manitra@ankatsoIIII.com", "+235 45 68 435");
 		Admin adm = new Admin("Nitoki", "tokitoki", com);
 		Teaching teach = new Teaching("English modern", 3, "12/05/2019", "Grande Salle");
-	    Student stud = new Student("L1", "P", std);
+	    Student stud = new Student("L1", "P", "ENG00012019", std);
 	    numberStudent += 1;
 
 	    // printing
