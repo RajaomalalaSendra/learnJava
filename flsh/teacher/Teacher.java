@@ -6,7 +6,7 @@ public class Teacher{
 	String diploma;
     String position;
     public Common common;
-    Teacher(String diploma, String position, Common common){
+    public Teacher(String diploma, String position, Common common){
     	this.diploma = diploma;
     	this.position = position;
     	this.common = common;
